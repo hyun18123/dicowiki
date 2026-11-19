@@ -2,6 +2,50 @@
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Discord Wiki</title>
 <style>
 :root{--green:#16834b;--deep:#12683d;--pale:#e9f5ee;--line:#d6e2da;--text:#202923;--muted:#66736b;--bg:#f4f6f4}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Arial,"Noto Sans KR",sans-serif}a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}.top{background:var(--green);color:white;border-bottom:4px solid var(--deep)}.topin{max-width:1180px;margin:auto;padding:15px 20px;display:flex;gap:22px;align-items:center;flex-wrap:wrap}.brand{font-size:23px;font-weight:800;color:#fff;white-space:nowrap}.brand small{font-size:11px;display:block;font-weight:400;opacity:.85;line-height:1}.nav{display:flex;gap:16px}.nav a{color:#fff;font-size:14px}.search{margin-left:auto;display:flex;min-width:min(360px,100%)}input,textarea,select{font:inherit;border:1px solid var(--line);border-radius:4px;padding:9px;background:white;color:var(--text);width:100%}.search input{border-radius:4px 0 0 4px}.search button{border-radius:0 4px 4px 0}.wrap{max-width:1180px;margin:22px auto;padding:0 20px}.layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:20px}.side,.panel,.article{background:#fff;border:1px solid var(--line);border-radius:5px}.side{padding:14px;height:max-content}.side h3{margin:0 0 8px;color:var(--deep);font-size:14px;border-bottom:1px solid var(--line);padding-bottom:7px}.side a{display:block;padding:5px 4px}.article{padding:24px;min-height:520px}.title{font-size:28px;margin:0 0 6px;border-bottom:2px solid var(--green);padding-bottom:10px}.sub{color:var(--muted);font-size:13px;margin-bottom:18px}.tabs{display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:18px}.tabs button{background:var(--pale);color:var(--deep);border:1px solid var(--line);padding:7px 12px}.tabs button.active,.btn{background:var(--green);color:white;border-color:var(--green)}button{cursor:pointer;border:1px solid var(--line);border-radius:4px;padding:9px 13px;background:#fff;color:var(--text);font:inherit}button:hover{filter:brightness(.96)}.btn{display:inline-block}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.card{border:1px solid var(--line);border-radius:4px;padding:13px;margin:10px 0;background:#fff}.card h3{margin:0 0 4px}.info{border:1px solid var(--line);background:#fbfdfb;width:100%;max-width:360px;float:right;margin:0 0 18px 22px}.info th{background:var(--pale);color:var(--deep);padding:8px;width:32%}.info td{padding:8px;border-bottom:1px solid var(--line)}.form{display:grid;gap:10px;max-width:650px}.form label{font-weight:600}.muted{color:var(--muted)}.hidden{display:none!important}.notice{padding:10px;background:var(--pale);border-left:4px solid var(--green);margin:12px 0}.footer{color:var(--muted);font-size:12px;text-align:center;padding:25px}.pill{background:var(--pale);color:var(--deep);padding:2px 8px;border-radius:12px;font-size:12px}@media(max-width:760px){.layout{grid-template-columns:1fr}.side{display:none}.search{order:3;width:100%;margin:0}.article{padding:16px}.info{float:none;margin:0 0 16px;max-width:100%}.title{font-size:24px}}
+
+/* refined green editorial UI */
+:root{--green:#147a4b;--deep:#0d5736;--pale:#eaf5ee;--line:#e1e9e3;--text:#17251d;--muted:#718078;--bg:#f3f7f4;--accent:#b8e2c7;--shadow:0 12px 34px rgba(19,65,39,.07)}
+*{box-sizing:border-box}
+body{background:radial-gradient(ellipse at 12% 0%,#e8f5ec 0,transparent 34%),var(--bg);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;line-height:1.7;color:var(--text)}
+.top{background:rgba(13,87,54,.97);border:0;box-shadow:0 4px 22px rgba(9,50,30,.13);position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}
+.topin{max-width:1240px;min-height:76px;padding:12px 24px;gap:26px}
+.brand{font-size:22px;letter-spacing:-.7px;line-height:1.2}.brand small{margin-top:5px;letter-spacing:.2px;font-size:10px;color:#c9e8d4}
+.nav{gap:20px}.nav a{font-weight:600;color:#e5f4e9;opacity:.9}.nav a:hover{opacity:1;text-decoration:none}
+.search{max-width:390px;background:#fff;border-radius:10px;padding:4px;box-shadow:0 2px 8px #063d251c}
+.search input{border:0;padding:9px 12px;outline:0}.search button{border:0;border-radius:7px;background:#e8f4ec;color:var(--deep);font-weight:700}
+#loginBtn,#logoutBtn{border:1px solid #ffffff55;background:#ffffff12;color:#fff;border-radius:9px;font-weight:650;padding:9px 15px}
+.wrap{max-width:1240px;margin:30px auto;padding:0 24px}
+.layout{grid-template-columns:218px minmax(0,1fr);gap:24px}
+.side,.article{border:1px solid #e4ebe5;border-radius:15px;box-shadow:var(--shadow)}
+.side{padding:19px;background:rgba(255,255,255,.88);position:sticky;top:100px}
+.side h3{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:#829188;border:0;margin:0 0 9px;padding:0}
+.side a{padding:9px 11px;border-radius:8px;color:#43584b;font-weight:550;font-size:14px}
+.side a:hover{background:#edf6f0;text-decoration:none;color:var(--deep)}
+#userBox{padding:9px 11px;font-size:13px;background:#f5f8f5;border-radius:8px;overflow-wrap:anywhere}
+.article{padding:34px 38px;min-height:620px;background:rgba(255,255,255,.96)}
+.title{font-size:31px;letter-spacing:-1.1px;line-height:1.3;border:0;padding:0 0 16px;margin:0 0 18px;position:relative}
+.title:after{content:"";display:block;width:54px;height:4px;background:linear-gradient(90deg,var(--green),#9bd5ae);border-radius:9px;position:absolute;bottom:0;left:0}
+h2{font-size:19px;letter-spacing:-.4px;margin:28px 0 12px}
+p{color:#425249}
+.notice{border:1px solid #d8eddf;border-left:4px solid #31a267;border-radius:10px;background:linear-gradient(100deg,#f0f9f3,#f8fcf9);padding:14px 17px;color:#385a45}
+button,.btn{border-radius:9px;font-weight:650;transition:transform .16s,box-shadow .16s,background .16s}
+button:hover,.btn:hover{filter:none;transform:translateY(-1px);box-shadow:0 5px 14px #164d2c18}
+.btn{background:linear-gradient(135deg,#16834f,#0d6b40);border:0;box-shadow:0 5px 14px #16834f25}
+.tabs{gap:9px}.tabs button{border-radius:8px}
+.card{border:1px solid #e7eee8;border-radius:12px;padding:17px 19px;margin:12px 0;background:#fff;box-shadow:0 3px 12px rgba(19,65,39,.035);transition:border-color .15s,transform .15s}
+.card:hover{border-color:#b9d9c4;transform:translateY(-2px)}
+.card h3{font-size:16px;letter-spacing:-.2px}
+.card h3 a{color:#176b43}
+input,textarea,select{border:1px solid #dce7df;border-radius:9px;padding:11px 13px;outline:none;transition:border-color .15s,box-shadow .15s}
+input:focus,textarea:focus,select:focus{border-color:#58a978;box-shadow:0 0 0 3px #16834f18}
+.form{gap:13px}.form label{font-size:14px;color:#405248}.form button{justify-self:start}
+.info{border:1px solid #dce9df;border-radius:12px;overflow:hidden;background:#fbfdfb;box-shadow:0 5px 18px #174c2b0a}
+.info th{background:#edf7f0;color:#285b3c;font-weight:650}.info td,.info th{padding:11px 13px}
+.pill{border-radius:99px;font-weight:650}
+.footer{padding:32px 10px;color:#849188}
+.sub{margin:0 0 22px}
+@media(max-width:760px){.top{position:relative}.topin{padding:14px 16px;gap:12px}.nav{order:2;width:100%;gap:18px}.search{order:3;width:100%;max-width:none}.wrap{margin:16px auto;padding:0 13px}.layout{gap:0}.side{display:none}.article{padding:23px 19px;border-radius:12px;min-height:500px}.title{font-size:26px}.footer{padding:22px 8px}}
+
 </style></head><body>
 <header class="top"><div class="topin"><a class="brand" href="#" data-page="home">Discord Wiki<small>디스코드 인물 사전</small></a><nav class="nav"><a href="#" data-page="home">대문</a><a href="#" data-page="list">인물 목록</a><a href="#" data-page="create">문서 등록</a></nav><form class="search" id="searchForm"><input id="q" placeholder="문서 검색"><button>검색</button></form><button id="loginBtn">Discord 로그인</button><button id="logoutBtn" class="hidden">로그아웃</button></div></header>
 <div class="wrap"><div class="layout"><aside class="side"><h3>Discord Wiki</h3><a href="#" data-page="home">대문</a><a href="#" data-page="list">전체 문서</a><a href="#" data-page="create">새 문서 만들기</a><a href="#" data-page="about">소개</a><h3 style="margin-top:18px">계정</h3><div id="userBox" class="muted">로그인되지 않음</div><a href="#" data-page="admin" id="adminLink" class="hidden">운영진 관리</a></aside><main class="article"><div id="app"><h1 class="title">Discord Wiki에 오신 것을 환영합니다</h1><p>디스코드 커뮤니티 인물 정보를 정리하는 공개 위키입니다.</p><div class="notice">문서의 내용은 출처를 바탕으로 작성하고, 개인정보 및 명예훼손에 유의해 주세요.</div><div class="toolbar"><button class="btn" data-page="list">인물 문서 둘러보기</button><button data-page="create">새 문서 등록</button></div><h2>최근 등록 문서</h2><div id="recent">불러오는 중...</div></div></main></div><div class="footer">Discord Wiki · 커뮤니티 기반 인물 사전</div></div>
